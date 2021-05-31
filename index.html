@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h2 class="logo">Nature's Calling</h2>
+            <div class="toggle"></div>
+        </header>
+        
+        <video src="imgs/sealion.mp4" muted autoplay loop></video>
+        
+    
+        <div class="overlay"></div>
+    
+        <div class="text">
+            <h2>Isn't he adorable?</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum facilis ut harum labore accusantium cupiditate.</p>
+            <a href="#">Explore</a>
+        </div>
+
+        <ul class="social">
+            <li><a href="#"><img src="imgs/instagram.png" alt=""></a></li>
+            <li><a href="#"><img src="imgs/twitter.png" alt=""></a></li>
+            <li><a href="#"><img src="imgs/facebook.png" alt=""></a></li>
+    </div>
+
+    <div class="menu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Info</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+    <script>
+        const menuToggle = document.querySelector('.toggle')
+        const container = document.querySelector('.container')
+
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active')
+            container.classList.toggle('active')
+        })
+    </script>
+    
+</body>
+</html>
